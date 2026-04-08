@@ -26,3 +26,5 @@ System Type	64-bit operating system, x64-based processor
 Pen and touch	No pen or touch input is available for this display
 ~~~
 
+# A note on supplying resources to the VM.
+In an experiment, I approximately halved the resources I used for set up. My RAM was 4096Gb, and I used  4 CPU Cores. It took at least several hours longer to perform the Ubuntu Server installation than it should have. Therefore, it is highly reccomended to use the above minimum, even 
