@@ -1,4 +1,4 @@
-# [Windows 10] Setup Ubuntu Server VM 24.04.4 in Virtualbox and Estbalish A Connection To Devices On The Same Home Network
+# [Windows 10] Setup Ubuntu Server VM 24.04.4 in Virtualbox and Establish A Connection to Home Network + Private Network
 
 # Prerequisites: 
 
