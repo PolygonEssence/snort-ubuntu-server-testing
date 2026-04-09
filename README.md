@@ -1,4 +1,4 @@
-# [Windows 10] Setup Ubuntu Server VM 24.04.4 in Virtualbox and Establish A Connection to Home Network + Private Network
+# [Windows 10] (WIP) Setup Ubuntu Server VM 24.04.4 in Virtualbox and Establish A Connection to Home Network + Private Network
 
 # Prerequisites: 
 
@@ -28,3 +28,8 @@ Pen and touch	No pen or touch input is available for this display
 
 # A note on supplying resources to the VM.
 In an experiment, I approximately halved the resources I used for set up. My RAM was 4096Gb, and I used  4 CPU Cores. It took at least several hours longer to perform the Ubuntu Server installation than it should have. Therefore, it is highly reccomended to use the above minimum, even 
+
+Subnet: 192.168.56.0/24
+IP: 192.168.56.244
+Gateway: Blank
+Name Server: Blank
