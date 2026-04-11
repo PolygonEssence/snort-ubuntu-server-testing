@@ -7,7 +7,8 @@
 * A strong and working internet connection on the Host device.
 * A private home network.
 * 12Gb+ (Reccomended: 16Gb+) of RAM on the Host device.
-*
+
+**If your setup is incorrect, this is NOT going to work!**
 # Completed with the following Host Device Specifications:
 ~~~
 Edition	Windows 10 Home
