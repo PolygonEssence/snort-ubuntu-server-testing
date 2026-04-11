@@ -74,11 +74,35 @@ Note: Use the Arrow Keys to navigate the following menus and [enter] or [space] 
 2. [Keyboard Configuration] If you have an English QWERTY keyboard SKIP otherwise identify an alternative keyboard.
 3. [Choose the type of installation] SKIP
 4. [Network Configuration]
-    Name
-  [enp0s3
+    Name   Type  NOTES
+  [enp0s3  eth   -             >  ]
+   DHCPv4 192.168.x.x/24
+     [Your Network Adapter]
 
+[enp0s8  eth   -               >  ]
+   DHCPv4 192.168.56.104/24
+     [Red Hat, Inc. / Virtio network device]
 
+Highlight enp0s8 and select it, then select the IPv4 Method dropdown,
+ and select "Manual," then fill in the following details:
+  Subnet: 192.168.56.0/24
+  Address: 192.168.56.244
+Leave the rest of the options blank and "save," and "done."
 
+5. [Proxy Configuration]
+    Proxy address: Skip!
+
+6. [Ubuntu archive mirror configuration]
+    Verify -> Mirror address: http://us.archive.ubuntu.com/ubuntu/
+      It will test the default address before continuing, if it fails try:
+        https://mirrors.mit.edu/ubuntu/
+
+7. [Guided storage configuration]
+     Skip!
+
+8. [Storage configuration]
+
+Highlight free space under "AVAILABLE DEVICES" and "Create Logical Volume."
 
 ~~~
 
