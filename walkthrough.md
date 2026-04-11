@@ -3,7 +3,7 @@
   ## 💡 <b>Assuming you've fulfilled the [pre-requisites here](./README.md) you may begin to open Virtualbox and follow the installation steps. 💡</b>
 
 
-  For the text-based guide refer to [this page.](./walkthrough.md)  
+  For the graphical guide refer to [this page.](./walkthrough.md)  
   ## 1. Initial VM Creation
 
 
