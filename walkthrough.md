@@ -59,7 +59,24 @@ Network
     Adapter Type: Paravirtualized Network (virtio-net)
     Promiscuous Mode: Allow All
 [Skip Everything Else]
+
+Start the Machine!
+~~~
+  ## 2. Setup & Install
   
+**A.** Pre-Installation Setup  
+
+~~~
+Note: Use the Arrow Keys to navigate the following menus and [enter] or [space] to select.
+
+1. Choose your language [English]
+---If prompted for [Installer update available] Continue without updating---
+2. [Keyboard Configuration] If you have an English QWERTY keyboard SKIP otherwise identify an alternative keyboard.
+3. [Choose the type of installation] SKIP
+4. [Network Configuration]
+    Name
+  [enp0s3
+
 
 
 
@@ -67,7 +84,13 @@ Network
 
 
 
-  
+
+
+
+
+
+
+          
 # 1.After installation is done reboot and login when prompted then login with sudo -i then run apt update and then apt upgrade && yes and wait
 # 2. ip addr verify enp0s8 reads "inet 192.168.56.244/24 brd 192.168.56.255" ands that enp0s3 reads "inet 192.168.1.X/24 metric 100 brd 192.168.1.255
 # 3. turn promiscuous mode on for enp0s8 run "ip link set enp0s8 promisc on" verify with "ip link"
