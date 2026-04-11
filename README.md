@@ -27,7 +27,13 @@ Pen and touch	No pen or touch input is available for this display
 ~~~
 
 # A note on supplying resources to the VM.
-In an experiment, I approximately halved the resources I used for set up. My RAM was 4096Gb, and I used  4 CPU Cores. It took at least several hours longer to perform the Ubuntu Server installation than it should have. Therefore, it is highly reccomended to use the above minimum, even 
+In an experiment, I approximately halved the resources I used for set up. My RAM was 4096Gb, and I used  4 CPU Cores. This did not make a huge difference in setup time, and in fact the biggest factor in how long it will take to install Ubuntu Server 24.04.4 LTS is your Network strength. 
+
+<img width="163" height="91" alt="Terrible-Download-Speed" src="https://github.com/user-attachments/assets/02c78151-6db7-4a1a-a90b-5dd1cfbf4902" />
+
+~~~
+At this download speed it might take at least a day just to download 1Gb of data.
+~~~
 
 ~~~
 Subnet: 192.168.56.0/24
