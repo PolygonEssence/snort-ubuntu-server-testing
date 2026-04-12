@@ -102,26 +102,57 @@ Leave the rest of the options blank and "save," and "done."
 
 8. [Storage configuration]
 
-Highlight free space under "AVAILABLE DEVICES" and "Create Logical Volume."
+  A. Highlight free space under "AVAILABLE DEVICES" and "Create Logical Volume."
+  B. Create logical volume
+  C. Create the following 5x mount points. Divide your free space by 4 and round down to the nearest
+       multiple of 10. E.G 50 GB free / 4 = 12.5 -> 10 GB each mount point. Ignore the name!
+  D.Verify you have each in any order:
+    MOUNT POINT    SIZE      TYPE     DEVICE TYPE
+    /boot          10G        -            -
+    /home          10G        -            -
+    /usr           10G        -            -  
+    /var           10G        -            -
+    SWAP            4G        -            -
+  E. Continue, ignore the warning.
 
+9. [Profile configuration]
+    Your name, your server name, and username are up to you.
+    [Password] Choose a secure password that is at least 8-12 characters long,
+      uses symbols (!,?,_), and doesn't contain any spelled out words, or repeating characters.
+      Write this password down and keep it in a secure environment!
+
+10. [Upgrade to Ubuntu Pro]
+      Skip!
+
+11. [SSH Configuration]
+    Skip!
+
+12. [Featured server snaps]
+    Skip!
+
+13 [Installation]
+    Congratulations! you have now set yourself up for success.
+    Now you must only wait several hours for Ubuntu to install itself.
+    If you need to step away DO not power off the machine or send the shut-down signal.
+    Instead, save the machine state. File > Close > Save the machine state.
+    Highly reccomended to leave it on when you are busy or not at your computer.
 ~~~
 
+  ## 2. Post-Install Configuration
+  
+**A.** Final Stretch.
 
-
-
-
-
-
-
-
-          
-# 1.After installation is done reboot and login when prompted then login with sudo -i then run apt update and then apt upgrade && yes and wait
-# 2. ip addr verify enp0s8 reads "inet 192.168.56.244/24 brd 192.168.56.255" ands that enp0s3 reads "inet 192.168.1.X/24 metric 100 brd 192.168.1.255
-# 3. turn promiscuous mode on for enp0s8 run "ip link set enp0s8 promisc on" verify with "ip link"
-# 4. run tcpdump --version and verify output text matches screenshot
-
-
-
-
-# 5 will use 4 mount points, divide "free space" amount by 4 and round down to nearest multiple of 10. e.g if you have 50gb free space 50 / 4 = 12.5 -> 10g to 4 of each mount point (/boot, home, usr, var) swap gets 2-4g(2 = good host hardware, 4g = bad host hardware, good hardware = 12gb+ alotted to VM, bad hardware = less than 12gb alotted)
+~~~
+1. Login us your user then login as sudo, run |sudo -i| (without | | )
+2. |apt update|
+3. | apt upgrade -y|
+4. |ip link| Verify enp0s8 has the IP of: 192.168.56.244 and there is PROMISC_UP.
+5. |ip link enp0s8 promisc on| <--- Run this after every reboot.
+6. |tcpdump -i enp0s8 -v|
+7. tcpdump will now begin listening for traffic on your VM's private network and will output any traffic
+   into the terminal.
+8. Open a terminal on your Windows host and ping 192.168.56.244.
+9. If everything goes well you should see several ICMP pings in the VM terminal. Otherwise, verify
+   all setup is correct.
+~~~
 
