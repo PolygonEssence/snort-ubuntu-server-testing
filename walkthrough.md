@@ -138,7 +138,7 @@ Leave the rest of the options blank and "save," and "done."
     Highly reccomended to leave it on when you are busy or not at your computer.
 ~~~
 
-  ## 2. Post-Install Configuration
+  ## 3. Post-Install Configuration
   
 **A.** Final Stretch.
 
