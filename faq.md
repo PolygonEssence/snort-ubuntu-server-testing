@@ -43,3 +43,5 @@ to verify if tcpdump is receiving ANY traffic:
 5. tcpdump -r lab_ping.pcap
 ~~~
 Find your host devices' IP/ ICMP pings, if there is none try #2!
+
+## 4. WIP
