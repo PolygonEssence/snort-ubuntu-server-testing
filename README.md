@@ -35,10 +35,3 @@ In an experiment, I approximately halved the resources I used for set up. My RAM
 ~~~
 At this download speed it might take at least a day just to download 1Gb of data.
 ~~~
-
-~~~
-Subnet: 192.168.56.0/24
-IP: 192.168.56.244
-Gateway: Blank
-Name Server: Blank
-~~~
