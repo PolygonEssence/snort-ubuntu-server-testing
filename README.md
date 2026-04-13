@@ -8,7 +8,7 @@
 * A private home network.
 * 12Gb+ (Reccomended: 16Gb+) of RAM on the Host device.
 
-**If your setup is incorrect, this is NOT going to work!**
+**If your setup is not exactly as follows [here](./walkthrough.md), you will probably have issues. Please refer to the [FAQ](./faq.md)**
 # Completed with the following Host Device Specifications:
 ~~~
 Edition	Windows 10 Home
@@ -27,7 +27,7 @@ System Type	64-bit operating system, x64-based processor
 Pen and touch	No pen or touch input is available for this display
 ~~~
 
-# A note on supplying resources to the VM.
+# A note on supplying resources to the VM
 In an experiment, I approximately halved the resources I used for set up. My RAM was 4096Gb, and I used  4 CPU Cores. This did not make a huge difference in setup time, and in fact the biggest factor in how long it will take to install Ubuntu Server 24.04.4 LTS is your Network strength. 
 
 <img width="163" height="91" alt="Terrible-Download-Speed" src="https://github.com/user-attachments/assets/02c78151-6db7-4a1a-a90b-5dd1cfbf4902" />
